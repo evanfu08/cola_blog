@@ -1,0 +1,15 @@
+@theme {
+	--color-primary: #2c4a5e;
+	--color-secondary: #6b8a9a;
+	--color-brand-secondary: #7dd3fc;
+	--color-bg: #f0f9ff;
+	--color-border: #ffffff;
+	--color-brand: #38bdf8;
+	--color-card: #ffffffaa;
+	--color-article: #ffffffe6;
+
+	--font-averia: 'Averia Gruesa Libre', sans-serif;
+	--font-sans:
+		'PingFang SC', -apple-system, system-ui, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, BlinkMacSystemFont, 'Helvetica Neue',
+		'Hiragino Sans GB', 'Microsoft YaHei', Arial;
+}

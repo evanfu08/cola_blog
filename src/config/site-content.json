@@ -1,0 +1,84 @@
+{
+	"meta": {
+		"title": "COLA",
+		"description": "COLA 的个人博客",
+		"username": "COLA"
+	},
+	"theme": {
+		"colorBrand": "#38bdf8",
+		"colorPrimary": "#2c4a5e",
+		"colorSecondary": "#6b8a9a",
+		"colorBrandSecondary": "#7dd3fc",
+		"colorBg": "#f0f9ff",
+		"colorBorder": "#ffffff",
+		"colorCard": "#ffffffaa",
+		"colorArticle": "#ffffffe6"
+	},
+	"backgroundColors": [
+		"#e0f2fe",
+		"#bae6fd",
+		"#7dd3fc",
+		"#38bdf8",
+		"#0ea5e9",
+		"#e0f2fe"
+	],
+	"artImages": [
+		{
+			"id": "cat",
+			"url": "/images/art/cat.png"
+		},
+		{
+			"id": "a46372ff45bc5524",
+			"url": "/images/art/a46372ff45bc5524.jpg"
+		}
+	],
+	"currentArtImageId": "a46372ff45bc5524",
+	"backgroundImages": [
+		{
+			"id": "",
+			"url": ""
+		}
+	],
+	"currentBackgroundImageId": "",
+	"socialButtons": [
+		{
+			"id": "github",
+			"type": "github",
+			"value": "https://github.com/evanfu08",
+			"label": "GitHub",
+			"order": 1
+		},
+		{
+			"id": "bilibili",
+			"type": "bilibili",
+			"value": "https://space.bilibili.com/480455454",
+			"label": "",
+			"order": 2
+		},
+		{
+			"id": "x",
+			"type": "x",
+			"value": "https://x.com/evanfu08",
+			"label": "",
+			"order": 3
+		},
+		{
+			"id": "telegram",
+			"type": "tg",
+			"value": "https://t.me/evanfu08",
+			"label": "",
+			"order": 4
+		},
+		{
+			"id": "email",
+			"type": "email",
+			"value": "1771005798@qq.com",
+			"label": "",
+			"order": 5
+		}
+	],
+	"clockShowSeconds": false,
+	"summaryInContent": false,
+	"isCachePem": false,
+	"hideEditButton": false
+}
