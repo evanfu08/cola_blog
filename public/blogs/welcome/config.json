@@ -1,7 +1,10 @@
 {
-  "title": "",
-  "tags": [],
+  "title": "COLA 博客正式上线！",
+  "tags": [
+    "日志",
+    "公告"
+  ],
   "date": "2025-12-09",
-  "summary": "",
+  "summary": "欢迎来到 COLA 的个人博客！这里记录了博客的搭建过程和所有定制化修改",
   "cover": "/blogs/welcome/ea11644abe960402.png"
 }
