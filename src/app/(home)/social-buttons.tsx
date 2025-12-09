@@ -138,7 +138,7 @@ export default function SocialButtons() {
 		}
 
 		const Icon = iconMap[button.type]
-		const hasLabel = Boolean(button.label)
+		const hasLabel = Boolean(button.label) && !maxSM
 		const iconSize = hasLabel ? 'size-6' : 'size-8'
 
 		if (button.type === 'github') {

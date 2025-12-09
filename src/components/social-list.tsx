@@ -1,6 +1,7 @@
 'use client'
 
 import GithubSVG from '@/svgs/github.svg'
+import { useSize } from '@/hooks/use-size'
 import { useConfigStore } from '@/app/(home)/stores/config-store'
 import JuejinSVG from '@/svgs/juejin.svg'
 import EmailSVG from '@/svgs/email.svg'
@@ -52,6 +53,7 @@ interface SocialListProps {
 
 export function SocialList({ className }: SocialListProps) {
     const { siteContent } = useConfigStore()
+    const { maxSM } = useSize()
 
     const sortedButtons = useMemo(() => {
         const buttons = (siteContent.socialButtons || []) as SocialButtonConfig[]
@@ -111,7 +113,7 @@ export function SocialList({ className }: SocialListProps) {
         }
 
         const Icon = iconMap[button.type]
-        const hasLabel = Boolean(button.label)
+        const hasLabel = Boolean(button.label) && !maxSM
         const iconSize = hasLabel ? 'size-6' : 'size-8'
 
         if (button.type === 'github') {
