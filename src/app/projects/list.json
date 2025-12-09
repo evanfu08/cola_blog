@@ -1,1 +1,14 @@
-[]
+[
+	{
+		"name": "废土",
+		"year": 2025,
+		"image": "blob:https://blog.evanfu.xyz/d53bc5d6-88bc-49ac-a428-03ee32319223",
+		"url": "https://waste.evanfu.xyz/",
+		"description": "为“无意义”而有“意义”的存在\n记录来自远方的信号",
+		"tags": [
+			"Vite",
+			"PWA",
+			"废土"
+		]
+	}
+]
