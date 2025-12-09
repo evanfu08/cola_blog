@@ -107,7 +107,7 @@ export default function NavCard() {
 		}
 	}, [hoveredIndex, activeIndex, form])
 
-	if (maxSM) position = { x: center.x - size.width / 2, y: 16 }
+	if (maxSM) position = { x: 0, y: 16 }
 
 	if (show)
 		return (
@@ -118,7 +118,12 @@ export default function NavCard() {
 					height={size.height}
 					x={position.x}
 					y={position.y}
-					className={clsx('overflow-hidden', form === 'mini' && 'p-3', form === 'icons' && 'flex items-center gap-6 p-3')}>
+					className={clsx(
+						'overflow-hidden',
+						form === 'mini' && 'p-3',
+						form === 'icons' && 'flex items-center gap-6 p-3',
+						'max-sm:!fixed max-sm:!left-[50%] max-sm:-translate-x-1/2 max-sm:!top-4'
+					)}>
 					<Link className='flex items-center gap-3' href='/'>
 						<Image src='/images/avatar.png' alt='avatar' width={40} height={40} style={{ boxShadow: ' 0 12px 20px -5px #E2D9CE' }} className='rounded-full' />
 						{form === 'full' && <span className='font-averia mt-1 text-2xl leading-none font-medium'>{siteContent.meta.title}</span>}
