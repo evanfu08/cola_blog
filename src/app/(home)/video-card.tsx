@@ -22,7 +22,7 @@ export default function VideoCard() {
         <HomeDraggableLayer cardKey={'videoCard' as any} x={x} y={y} width={width} height={height}>
             <Card className='overflow-hidden p-2 max-sm:static max-sm:translate-0' order={styles?.order ?? 5} width={width} height={height} x={x} y={y}>
                 <video
-                    src='/videos/cola.mp4'
+                    src='/videos/cola.webm'
                     autoPlay
                     loop
                     muted
