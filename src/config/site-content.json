@@ -24,15 +24,11 @@
 	],
 	"artImages": [
 		{
-			"id": "cat",
-			"url": "/images/art/cat.png"
-		},
-		{
-			"id": "a46372ff45bc5524",
-			"url": "/images/art/a46372ff45bc5524.jpg"
+			"id": "2903ad405aeea901",
+			"url": "/images/art/2903ad405aeea901.png"
 		}
 	],
-	"currentArtImageId": "a46372ff45bc5524",
+	"currentArtImageId": "2903ad405aeea901",
 	"backgroundImages": [
 		{
 			"id": "",
