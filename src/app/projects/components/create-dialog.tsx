@@ -10,7 +10,7 @@ import { DialogModal } from '@/components/dialog-modal'
 interface CreateDialogProps {
 	project: Project | null
 	onClose: () => void
-	onSave: (project: Project) => void
+	onSave: (project: Project, imageItem?: ImageItem) => void
 }
 
 export default function CreateDialog({ project, onClose, onSave }: CreateDialogProps) {
@@ -25,6 +25,7 @@ export default function CreateDialog({ project, onClose, onSave }: CreateDialogP
 		npm: undefined
 	})
 	const [showImageDialog, setShowImageDialog] = useState(false)
+	const [imageItem, setImageItem] = useState<ImageItem | null>(null)
 	const [tagsInput, setTagsInput] = useState('')
 
 	useEffect(() => {
@@ -49,6 +50,7 @@ export default function CreateDialog({ project, onClose, onSave }: CreateDialogP
 	const handleImageSubmit = (image: ImageItem) => {
 		const imageUrl = image.type === 'url' ? image.url : image.previewUrl
 		setFormData({ ...formData, image: imageUrl })
+		setImageItem(image)
 	}
 
 	const handleTagsChange = (value: string) => {
@@ -71,7 +73,7 @@ export default function CreateDialog({ project, onClose, onSave }: CreateDialogP
 			return
 		}
 
-		onSave(formData)
+		onSave(formData, imageItem || undefined)
 		onClose()
 		toast.success(project ? '更新成功' : '添加成功')
 	}

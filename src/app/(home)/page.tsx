@@ -76,7 +76,7 @@ export default function Home() {
 				{cardStyles.artCard?.enabled !== false && <ArtCard />}
 				{cardStyles.hiCard?.enabled !== false && <HiCard />}
 				{!maxSM && cardStyles.clockCard?.enabled !== false && <ClockCard />}
-				{!maxSM && (cardStyles as any).videoCard?.enabled !== false && <VideoCard />}
+				{(cardStyles as any).videoCard?.enabled !== false && <VideoCard />}
 				{!maxSM && cardStyles.musicCard?.enabled !== false && <MusicCard />}
 				{cardStyles.socialButtons?.enabled !== false && <SocialButtons />}
 				{!maxSM && cardStyles.shareCard?.enabled !== false && <ShareCard />}
