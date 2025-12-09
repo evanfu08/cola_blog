@@ -333,9 +333,9 @@ export default function BlogPage() {
 												'group flex min-h-10 items-center gap-3 py-3 transition-all',
 												editMode
 													? cn(
-															'rounded-lg border px-3',
-															isSelected ? 'border-brand/60 bg-brand/5' : 'hover:border-brand/40 border-transparent hover:bg-white/60'
-														)
+														'rounded-lg border px-3',
+														isSelected ? 'border-brand/60 bg-brand/5' : 'hover:border-brand/40 border-transparent hover:bg-white/60'
+													)
 													: 'cursor-pointer'
 											)}>
 											{editMode && (
@@ -375,21 +375,6 @@ export default function BlogPage() {
 						</motion.div>
 					)
 				})}
-				{items.length > 0 && (
-					<div className='text-center'>
-						<motion.a
-							initial={{ opacity: 0, scale: 0.6 }}
-							animate={{ opacity: 1, scale: 1 }}
-							whileHover={{ scale: 1.05 }}
-							whileTap={{ scale: 0.95 }}
-							href='https://juejin.cn/user/2427311675422382/posts'
-							target='_blank'
-							className='card text-secondary static inline-flex items-center gap-2 rounded-xl px-4 py-2 text-xs'>
-							<JuejinSVG className='h-4 w-4' />
-							更多
-						</motion.a>
-					</div>
-				)}
 			</div>
 
 			<div className='pt-12'>
