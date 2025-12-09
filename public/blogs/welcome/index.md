@@ -82,11 +82,11 @@ description: 欢迎来到 COLA 的个人博客！这里记录了博客的搭建�
 
 欢迎通过以下方式联系我：
 
-- **GitHub**: [YYsuni](https://github.com/YYsuni)
-- **Bilibili**: [COLA](https://space.bilibili.com/1434498691)
-- **X (Twitter)**: [@YYsuni](https://x.com/YYsuni)
-- **Telegram**: [@YYsuni](https://t.me/YYsuni)
-- **Email**: [admin@hvh.one](mailto:admin@hvh.one)
+- GitHub: [evanfu08](https://github.com/evanfu08)
+- Bilibili: [COLA](https://space.bilibili.com/480455454)
+- X (Twitter): [@evanfu08](https://x.com/evanfu08)
+- Telegram: [@evanfu08](https://t.me/evanfu08)
+- Email: [1771005798@qq.com](mailto:1771005798@qq.com)
 
 ## 后续计划
 
