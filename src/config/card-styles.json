@@ -88,5 +88,13 @@
 		"offsetX": 6,
 		"offsetY": 245,
 		"enabled": true
+	},
+	"themeToggle": {
+		"width": 54,
+		"height": 54,
+		"order": 9,
+		"offsetX": -54,
+		"offsetY": 245,
+		"enabled": true
 	}
 }

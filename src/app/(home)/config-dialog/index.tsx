@@ -13,13 +13,14 @@ import { SiteSettings, type FileItem, type ArtImageUploads, type BackgroundImage
 import { ColorConfig } from './color-config'
 import { HomeLayout } from './home-layout'
 import { MediaConfig } from './media-config'
+import { ThemeConfig } from './theme-config'
 
 interface ConfigDialogProps {
 	open: boolean
 	onClose: () => void
 }
 
-type TabType = 'site' | 'color' | 'layout' | 'media'
+type TabType = 'site' | 'color' | 'layout' | 'media' | 'theme'
 
 export default function ConfigDialog({ open, onClose }: ConfigDialogProps) {
 	const { isAuth, setPrivateKey } = useAuthStore()
@@ -236,7 +237,8 @@ export default function ConfigDialog({ open, onClose }: ConfigDialogProps) {
 		{ id: 'site', label: '网站设置' },
 		{ id: 'color', label: '色彩配置' },
 		{ id: 'layout', label: '首页布局' },
-		{ id: 'media', label: '媒体配置' }
+		{ id: 'media', label: '媒体配置' },
+		{ id: 'theme', label: '主题设置' }
 	]
 
 	return (
@@ -309,6 +311,7 @@ export default function ConfigDialog({ open, onClose }: ConfigDialogProps) {
 					{activeTab === 'color' && <ColorConfig formData={formData} setFormData={setFormData} />}
 					{activeTab === 'layout' && <HomeLayout cardStylesData={cardStylesData} setCardStylesData={setCardStylesData} onClose={onClose} />}
 					{activeTab === 'media' && <MediaConfig mediaUploads={mediaUploads} setMediaUploads={setMediaUploads} onClose={onClose} />}
+					{activeTab === 'theme' && <ThemeConfig />}
 				</div>
 			</DialogModal>
 		</>

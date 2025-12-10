@@ -10,6 +10,7 @@ import AritcleCard from '@/app/(home)/aritcle-card'
 import WriteButtons from '@/app/(home)/write-buttons'
 import VideoCard from '@/app/(home)/video-card'
 import LikePosition from './like-position'
+import ThemePosition from './theme-position'
 import { useSize } from '@/hooks/use-size'
 import { motion } from 'motion/react'
 import { useLayoutEditStore } from './stores/layout-edit-store'
@@ -83,6 +84,7 @@ export default function Home() {
 				{cardStyles.articleCard?.enabled !== false && <AritcleCard />}
 				{!maxSM && cardStyles.writeButtons?.enabled !== false && <WriteButtons />}
 				{cardStyles.likePosition?.enabled !== false && <LikePosition />}
+				{(cardStyles as any).themeToggle?.enabled !== false && <ThemePosition />}
 			</div>
 			<ConfigDialog open={configDialogOpen} onClose={() => setConfigDialogOpen(false)} />
 		</>

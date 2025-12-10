@@ -1,6 +1,6 @@
 {
-	"name": "2025-blog",
-	"version": "0.1.0",
+	"name": "cola_blog",
+	"version": "1.2.0",
 	"private": true,
 	"scripts": {
 		"dev": "next dev --turbopack -p 2025",

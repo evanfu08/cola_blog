@@ -14,6 +14,17 @@
 		"colorCard": "#FFFFFF99",
 		"colorArticle": "#FFFFFFcc"
 	},
+	"darkTheme": {
+		"colorBrand": "#4A90E2",
+		"colorPrimary": "#E8E8E8",
+		"colorSecondary": "#A0A0A0",
+		"colorBrandSecondary": "#7EC8E3",
+		"colorBg": "#0F0F17",
+		"colorBorder": "#2D2D44",
+		"colorCard": "#1A1A28CC",
+		"colorArticle": "#1A1A28EE"
+	},
+	"themeMode": "auto",
 	"backgroundColors": [
 		"#E3F2FD",
 		"#BBDEFB",
