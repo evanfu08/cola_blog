@@ -14,6 +14,8 @@ export default function Head() {
 			<link href='https://fonts.googleapis.cn/css2?family=Averia+Gruesa+Libre&display=swap' rel='stylesheet' />
 
 
+			{/* Umami Analytics */}
+			<script defer src="https://cloud.umami.is/script.js" data-website-id="e1d74539-5c47-4e5d-a82d-95df124ada6b"></script>
 		</head>
 	)
 }
